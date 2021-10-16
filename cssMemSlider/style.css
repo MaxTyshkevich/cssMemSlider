@@ -32,7 +32,11 @@
   border-radius: 10px;
   overflow-x: auto;
 
+  scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+}
+.slider_show-container::-webkit-scrollbar {
+  opacity: 0;
 }
 
 .slider_img {
@@ -75,12 +79,21 @@
   background-color: rgb(123, 177, 235);
 }
 
-.dots_item.active {
+.dots_btn:active .dots_item {
+  opacity: 0.7;
+}
+
+.dots_btn:focus-within > .dots_item {
   border: 3px solid rgb(123, 177, 235);
   background-color: transparent;
 }
 
-.dots_btn:hover .dots_item {
+/* .dots_item.active {
+  border: 3px solid rgb(123, 177, 235);
+  background-color: transparent;
+} */
+
+/* .dots_btn:hover .dots_item {
   background-color: rgb(255, 255, 255);
 }
 
@@ -91,7 +104,7 @@
 
 .dots_btn:active {
   opacity: 0.8;
-}
+} */
 
 @media (max-width: 768px) {
   .slider {
