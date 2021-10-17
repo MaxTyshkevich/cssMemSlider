@@ -77,34 +77,17 @@
   height: 1.5rem;
   border-radius: 50%;
   background-color: rgb(123, 177, 235);
+  transition: 500ms all ease;
 }
 
-.dots_btn:active .dots_item {
-  opacity: 0.7;
+.dots_btn:hover .dots_item {
+  opacity: 0.5;
 }
 
 .dots_btn:focus-within > .dots_item {
   border: 3px solid rgb(123, 177, 235);
   background-color: transparent;
 }
-
-/* .dots_item.active {
-  border: 3px solid rgb(123, 177, 235);
-  background-color: transparent;
-} */
-
-/* .dots_btn:hover .dots_item {
-  background-color: rgb(255, 255, 255);
-}
-
-.dots_btn:hover .dots_item.active {
-  border: 3px solid rgb(255, 255, 255);
-  background-color: transparent;
-}
-
-.dots_btn:active {
-  opacity: 0.8;
-} */
 
 @media (max-width: 768px) {
   .slider {
