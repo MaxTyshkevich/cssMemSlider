@@ -7,5 +7,43 @@
     <title>cssMemSlider</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="slider">
+      <input type="radio" name="slider" id="radio-1" checked />
+      <input type="radio" name="slider" id="radio-2" />
+      <input type="radio" name="slider" id="radio-3" />
+
+      <div class="slider_show-container">
+        <img
+          class="slider_img slide-1"
+          src="assept/bin1.jpeg"
+          alt="slide-img"
+        />
+        <img class="slider_img slide-2" src="assept/jim.jpg" alt="slide-img" />
+        <img
+          class="slider_img slide-3"
+          src="assept/ventura.jpg"
+          alt="slide-img"
+        />
+      </div>
+      <div class="slider_descriptions">
+        <div class="slider_text">Я после сдачи задания.</div>
+        <div class="slider_text">Мое резюме.</div>
+        <div class="slider_text">Как работает этот код?</div>
+      </div>
+      <div class="slider_dots">
+        <div class="dots">
+          <label for="radio-1" class="dots__label"
+            ><span class="dots__icon"></span
+          ></label>
+          <label for="radio-2" class="dots__label"
+            ><span class="dots__icon"></span>
+          </label>
+          <label for="radio-3" class="dots__label"
+            ><span class="dots__icon"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
